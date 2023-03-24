@@ -1,0 +1,28 @@
+.add__category {
+    .el-aside {
+      width: 30% !important;
+      max-width: 440px;
+      min-width: 300px;
+    }
+    .content {
+      width: 100%;
+      margin-right: 32px;
+    }
+    ::v-deep(.el-tabs__content) {
+      overflow: visible;
+      margin-bottom: 32px;
+    }
+    .translate__top {
+      position: absolute;
+      top: -65px;
+      right: 0;
+      z-index: 1;
+      ::v-deep(.el-input__inner) {
+        color: #242424;
+      }
+      ::v-deep(.el-icon-arrow-up:before) {
+        content: '\e78f';
+        color: #616161;
+      }
+    }
+  }

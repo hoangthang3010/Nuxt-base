@@ -1,0 +1,44 @@
+body[data-menu="register"] {
+  .register {
+    @media screen and (min-width: 1024px) {
+      padding: 3.125rem 9.375rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 3.125rem 15.625rem;
+    }
+  }
+}
+
+.register {
+  color: #242424;
+  &__wrapper {
+    min-width: 25rem; // 400px;
+  }
+  &__header {
+    margin-bottom: 2.5rem;
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-top: 6.25rem; // 100px
+    }
+    .no-account {
+      font-size: 1.25rem; // 20px;
+    }
+  }
+  .form {
+    margin-bottom: 2.5rem; //40px;
+  }
+  .activities {
+    margin-bottom: 2.5rem; //40px;
+  }
+  .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #242424;
+  }
+  ::v-deep(.el-form-item__label) {
+    color: #242424;
+  }
+  ::v-deep(.el-form-item) {
+    margin-bottom: 12px;
+  }
+}

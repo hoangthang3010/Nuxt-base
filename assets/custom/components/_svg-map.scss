@@ -1,0 +1,212 @@
+.svg-map {
+  width: 65%;
+  height: auto;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.svg-map__location {
+  fill: #a1d99b;
+  cursor: pointer;
+}
+
+.svg-map__location:focus,
+.svg-map__location[id='hokkaido']:hover {
+  fill: #3a5393;
+  outline: 0;
+}
+
+.svg-map__location[id='hokkaido'] {
+  fill: #8796bd;
+  cursor: pointer;
+}
+
+.svg-map__location[id='aomori'],
+.svg-map__location[id='iwate'],
+.svg-map__location[id='akita'],
+.svg-map__location[id='yamagata'],
+.svg-map__location[id='miyagi'],
+.svg-map__location[id='fukushima'] {
+  fill: #a0c7e2;
+  cursor: pointer;
+}
+
+.svg-map__location[id='aomori']:hover,
+.svg-map__location[id='iwate']:hover,
+.svg-map__location[id='akita']:hover,
+.svg-map__location[id='yamagata']:hover,
+.svg-map__location[id='miyagi']:hover,
+.svg-map__location[id='fukushima']:hover {
+  fill: #3a5393;
+  outline: 0;
+}
+
+.svg-map__location[id='gunma'],
+.svg-map__location[id='tochigi'],
+.svg-map__location[id='ibaraki'],
+.svg-map__location[id='saitama'],
+.svg-map__location[id='tokyo'],
+.svg-map__location[id='chiba'],
+.svg-map__location[id='kanagawa'] {
+  fill: #79c3bf;
+  cursor: pointer;
+}
+
+.svg-map__location[id='gunma']:hover,
+.svg-map__location[id='tochigi']:hover,
+.svg-map__location[id='ibaraki']:hover,
+.svg-map__location[id='saitama']:hover,
+.svg-map__location[id='tokyo']:hover,
+.svg-map__location[id='chiba']:hover,
+.svg-map__location[id='kanagawa']:hover {
+  fill: #4cafaa;
+  cursor: pointer;
+}
+
+.svg-map__location[id='gifu'],
+.svg-map__location[id='aichi'],
+.svg-map__location[id='shizuoka'],
+.svg-map__location[id='yamanashi'],
+.svg-map__location[id='nagano'],
+.svg-map__location[id='niigata'],
+.svg-map__location[id='toyama'],
+.svg-map__location[id='ishikawa'],
+.svg-map__location[id='fukui'] {
+  fill: #8fc49f;
+  cursor: pointer;
+}
+
+.svg-map__location[id='gifu']:hover,
+.svg-map__location[id='aichi']:hover,
+.svg-map__location[id='shizuoka']:hover,
+.svg-map__location[id='yamanashi']:hover,
+.svg-map__location[id='nagano']:hover,
+.svg-map__location[id='niigata']:hover,
+.svg-map__location[id='toyama']:hover,
+.svg-map__location[id='ishikawa']:hover,
+.svg-map__location[id='fukui']:hover {
+  fill: #519f63;
+  cursor: pointer;
+}
+
+.svg-map__location[id='nara'],
+.svg-map__location[id='shiga'],
+.svg-map__location[id='kyoto'],
+.svg-map__location[id='wakayama'],
+.svg-map__location[id='osaka'],
+.svg-map__location[id='mie'],
+.svg-map__location[id='hyogo'] {
+  fill: #b9d287;
+  cursor: pointer;
+}
+
+.svg-map__location[id='nara']:hover,
+.svg-map__location[id='shiga']:hover,
+.svg-map__location[id='kyoto']:hover,
+.svg-map__location[id='wakayama']:hover,
+.svg-map__location[id='osaka']:hover,
+.svg-map__location[id='mie']:hover,
+.svg-map__location[id='hyogo']:hover {
+  fill: #a4cd52;
+  cursor: pointer;
+}
+
+.svg-map__location[id='tottori'],
+.svg-map__location[id='okayama'],
+.svg-map__location[id='hiroshima'],
+.svg-map__location[id='shimane'],
+.svg-map__location[id='yamaguchi'] {
+  fill: #f4d276;
+  cursor: pointer;
+}
+
+.svg-map__location[id='tottori']:hover,
+.svg-map__location[id='okayama']:hover,
+.svg-map__location[id='hiroshima']:hover,
+.svg-map__location[id='shimane']:hover,
+.svg-map__location[id='yamaguchi']:hover {
+  fill: #ffc639;
+  cursor: pointer;
+}
+
+.svg-map__location[id='ehime'],
+.svg-map__location[id='kagawa'],
+.svg-map__location[id='kochi'],
+.svg-map__location[id='tokushima'] {
+  fill: #e8a98a;
+  cursor: pointer;
+}
+
+.svg-map__location[id='ehime']:hover,
+.svg-map__location[id='kagawa']:hover,
+.svg-map__location[id='kochi']:hover,
+.svg-map__location[id='tokushima']:hover {
+  fill: #ea8756;
+  cursor: pointer;
+}
+
+.svg-map__location[id='fukuoka'],
+.svg-map__location[id='oita'],
+.svg-map__location[id='kumamoto'],
+.svg-map__location[id='miyazaki'],
+.svg-map__location[id='kagoshima'],
+.svg-map__location[id='nagasaki'],
+.svg-map__location[id='saga'],
+.svg-map__location[id='沖縄県'] {
+  fill: #eab8c1;
+  cursor: pointer;
+}
+
+.svg-map__location[id='fukuoka']:hover,
+.svg-map__location[id='oita']:hover,
+.svg-map__location[id='kumamoto']:hover,
+.svg-map__location[id='miyazaki']:hover,
+.svg-map__location[id='kagoshima']:hover,
+.svg-map__location[id='nagasaki']:hover,
+.svg-map__location[id='saga']:hover,
+.svg-map__location[id='沖縄県']:hover {
+  fill: #de657b;
+  cursor: pointer;
+}
+
+.hokkaido-color {
+  fill: #3a5393 !important;
+  outline: 0 !important;
+}
+
+.group-tottori-color {
+  fill: #ffc639 !important;
+  cursor: pointer !important;
+}
+
+.group-nara-color {
+  fill: #a4cd52 !important;
+  cursor: pointer !important;
+}
+
+.group-gunma-color {
+  fill: #4cafaa !important;
+  cursor: pointer !important;
+}
+
+.group-gifu-color {
+  fill: #519f63 !important;
+  cursor: pointer !important;
+}
+
+.group-fukuoka-color {
+  fill: #de657b !important;
+  cursor: pointer !important;
+}
+
+.group-ehime-color {
+  fill: #ea8756 !important;
+  cursor: pointer !important;
+}
+
+.group-aomori-color {
+  fill: #3a5393 !important;
+  outline: 0 !important;
+}

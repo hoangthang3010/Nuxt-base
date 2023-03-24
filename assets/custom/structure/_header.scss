@@ -1,0 +1,109 @@
+$border-color: #dfdfdf;
+$bg-color: #2b2d30;
+$bg-color-light: #404245;
+$color-white: #ffffff;
+.header {
+  padding-top: 1.25rem;
+  min-height: 92px;
+  color: #150c15;
+  letter-spacing: 0.15px;
+  &__text {
+    color: #150c15;
+    letter-spacing: 0.15px;
+  }
+  .nav {
+    &__item {
+      margin-right: 20px;
+    }
+  }
+  &__wrapper {
+    color: $color-white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    a {
+      color: inherit;
+    }
+    ul,
+    ol {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+  }
+  &__content {
+    background: $bg-color;
+    .logo {
+      &__text {
+        font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -0.8px;
+        text-transform: uppercase;
+        padding-left: 0.625rem;
+      }
+    }
+    .search {
+      min-width: 34.375rem;
+      margin-left: 1rem;
+    }
+    .quick__actions {
+      margin-left: auto;
+      font-size: 0.875rem;
+      .cart,
+      .log-out {
+        padding: 0 1.25rem;
+      }
+      .log-out {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          height: 24px;
+          width: 1px;
+          background: $color-white;
+          left: 0;
+          top: -1px;
+        }
+      }
+      .nav__item-text {
+        padding-left: 0.5rem;
+      }
+      .languages {
+        .el-dropdown {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  &__submenu {
+    background: $bg-color-light;
+    .submenu {
+      min-height: 2.688rem;
+    }
+    .nav__item {
+      padding-right: 2.5rem;
+    }
+  }
+}
+
+// Overide css Element UI
+.header__wrapper {
+  .search {
+    .search__input .el-input__inner {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border-right: 0;
+      height: 2.75rem;
+    }
+    .el-button.el-button--warning {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      height: 2.75rem;
+    }
+  }
+  .el-dropdown .el-icon-arrow-down {
+    color: #ffffff;
+  }
+}

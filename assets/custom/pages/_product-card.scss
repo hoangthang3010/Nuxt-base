@@ -1,0 +1,65 @@
+.product-card {
+  &__title {
+    color: #242424;
+    font-weight: 500;
+  }
+  &__child {
+    border: 1px solid #dfdfdf;
+    padding: 0;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  &__img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    // min-width: 250px;
+  }
+  &__detail-card {
+    padding: 0.625rem 1.25rem;
+    > span {
+      width: fit-content;
+    }
+  }
+  &__price {
+    color: $primary-yellow;
+    font-size: 1.25rem;
+    letter-spacing: 0.15px;
+    font-weight: 700;
+  }
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      font-size: 14px;
+      color: #747783;
+      padding: 2px 8px;
+      border: 1px solid #d9d9d9;
+      border-radius: 17px;
+      margin-bottom: 5px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  &__location {
+    border-top: 1px solid #dfdfdf;
+    padding: 0.625rem 1rem;
+    align-items: center;
+
+    .location-detail {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .icon-medal {
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  .rank-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

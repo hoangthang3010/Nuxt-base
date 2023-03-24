@@ -1,0 +1,76 @@
+$border-color: #494949;
+$bg-color: #242424;
+$color-white: #ffffff;
+.footer {
+  &__content {
+    background: $bg-color;
+  }
+  &__wrapper {
+    color: $color-white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    a {
+      color: inherit;
+    }
+    ul, ol {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+  }
+  // ========= LOGO
+  &__logo {
+    padding-top: 5rem;
+  }
+  // ========== Helpers
+  &__helpers {
+    padding: 3.125rem 0;
+    .helpers {
+      &__title {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 0.75rem;
+      }
+      &__item {
+        margin-bottom: 1.25rem;
+      }
+    }
+    .list__item {
+      padding-bottom: 0.875rem;
+      &-item {
+        padding-left: 0.5rem;
+      }
+      &-social {
+        padding-right: 1rem;
+      }
+    }
+  }
+  // ========= Short links
+  &__short {
+    padding: 2.5rem 0;
+    border-top: 1px solid $border-color;
+    .short__item {
+      a {
+        display: block;
+        padding-right: 1rem;
+        margin-right: 1rem;
+        border-right: 1px solid $color-white;
+      }
+      &:first-child {
+        a {
+          padding-left: 0;
+        }
+      }
+      &:last-child {
+        a {
+          padding-right: 0;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}

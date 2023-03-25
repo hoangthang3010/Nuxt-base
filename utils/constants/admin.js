@@ -1,18 +1,18 @@
 const NewsTypes = {
   NEWS: 2,
   NOTICES: 1,
-};
+}
 
 const NewsStatus = {
-  DRAFT: "draft",
-  PUBLISHED_PENDING: "published_pending",
-  PUBLISHED: "published",
-};
+  DRAFT: 'draft',
+  PUBLISHED_PENDING: 'published_pending',
+  PUBLISHED: 'published',
+}
 
 const NewsPublishedStatus = {
   YES: 1,
   NO: 0,
-};
+}
 
 const DisplaySetting = {
   CATEGORY: 1,
@@ -26,87 +26,87 @@ const DisplaySetting = {
   DONATION_USE_CATEGORY: 9,
   PRODUCT_FOR_MUNICIPALITY: 10,
   FEEDBACK: 11,
-};
+}
 
 const donationStatusListEn = [
   {
     id: 1,
-    name: "Register",
+    name: 'Register',
     value: 1,
     disabled: false,
   },
   {
     id: 2,
-    name: "Payment success",
+    name: 'Payment success',
     value: 2,
     disabled: false,
   },
   {
     id: 3,
-    name: "Awaiting shipment",
+    name: 'Awaiting shipment',
     value: 3,
     disabled: false,
   },
   {
     id: 4,
-    name: "Shipping",
+    name: 'Shipping',
     value: 4,
     disabled: false,
   },
   {
     id: 5,
-    name: "Shipped",
+    name: 'Shipped',
     value: 5,
     disabled: false,
   },
   {
     id: 6,
-    name: "Complete",
+    name: 'Complete',
     value: 6,
     disabled: false,
   },
-];
+]
 
 const donationStatusListJa = [
   {
     id: 1,
-    name: "寄附申込",
+    name: '寄附申込',
     value: 1,
   },
   {
     id: 2,
-    name: "寄附入金完了",
+    name: '寄附入金完了',
     value: 2,
   },
   {
     id: 3,
-    name: "出荷準備中",
+    name: '出荷準備中',
     value: 3,
   },
   {
     id: 4,
-    name: "配送中",
+    name: '配送中',
     value: 4,
   },
   {
     id: 5,
-    name: "配送完了",
+    name: '配送完了',
     value: 5,
   },
   {
     id: 6,
-    name: "請求書受領",
+    name: '請求書受領',
     value: 6,
   },
-];
+]
 
 const TypeForm = {
-  ADD: "add",
-  EDIT: "edit",
-};
+  ADD: 'add',
+  EDIT: 'edit',
+}
 
-const DEFAULT_IMAGE = "https://i.ibb.co/C72HgPM/product-default.png";
-const ACCOUNT_STATUS = { ACTIVE: "3", DEACTIVE: "9" };
+const DEFAULT_IMAGE = 'https://i.ibb.co/C72HgPM/product-default.png'
+const ACCOUNT_STATUS = { ACTIVE: '3', DEACTIVE: '9' }
 export {
   NewsTypes,
   NewsStatus,
@@ -117,4 +117,4 @@ export {
   donationStatusListJa,
   DEFAULT_IMAGE,
   ACCOUNT_STATUS,
-};
+}

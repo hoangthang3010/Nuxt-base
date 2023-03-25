@@ -24,13 +24,8 @@ export default {
   ADD_RECOMMENDATION_DATA_CATEGORIES(state, payload) {
     state.recommendationData.recommend_categories.push(payload)
   },
-  UPDATE_RECOMMENDATION_DATA_CATEGORIES(
-    state,
-    { category_id, product_ids, index }
-  ) {
-    let catIndex = state.recommendationData.recommend_categories.findIndex(
-      (cat) => cat.category_id === category_id
-    )
+  UPDATE_RECOMMENDATION_DATA_CATEGORIES(state, { category_id, product_ids, index }) {
+    let catIndex = state.recommendationData.recommend_categories.findIndex((cat) => cat.category_id === category_id)
 
     if (index !== undefined) {
       catIndex = index
@@ -52,10 +47,7 @@ export default {
   ADD_POPULAR_DATA_CATEGORIES(state, payload) {
     state.popularData.popular_categories.push(payload)
   },
-  UPDATE_POPULAR_DATA_CATEGORIES(
-    state,
-    { category_id, product_ids, is_automatic, index }
-  ) {
+  UPDATE_POPULAR_DATA_CATEGORIES(state, { category_id, product_ids, is_automatic, index }) {
     state.popularData.popular_categories.splice(index, 1, {
       is_automatic,
       category_id,

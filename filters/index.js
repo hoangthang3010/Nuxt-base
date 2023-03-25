@@ -1,56 +1,52 @@
-// import Vue from "vue";
-// import { Language } from "~/utils/constants";
+// import Vue from 'vue'
+// import { Language } from '~/utils/constants'
 
-// const dateByJapan = ["月", "火", "水", "木", "金", "土", "日"];
+// const dateByJapan = ['月', '火', '水', '木', '金', '土', '日']
 
-// const price = Vue.filter("price", function (value) {
-//   return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-// });
+// const price = Vue.filter('price', function (value) {
+//   return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+// })
 
-// const formatPrice = Vue.filter("formatPrice", function (value) {
-//   if (!value && value !== 0) return 0;
+// const formatPrice = Vue.filter('formatPrice', function (value) {
+//   if (!value && value !== 0) return 0
 //   return $nuxt
-//     .$t("format.price")
+//     .$t('format.price')
 //     .replace(
-//       "xxx,xxx",
-//       $nuxt.$store.getters["location/getLocale"] === Language.EN
-//         ? parseFloat(value)?.toFixed(2)
-//         : Math.floor(value)
+//       'xxx,xxx',
+//       $nuxt.$store.getters['location/getLocale'] === Language.EN ? parseFloat(value)?.toFixed(2) : Math.floor(value)
 //     )
 //     .toString()
-//     .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-//     .replace(".00", "");
-// });
+//     .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+//     .replace('.00', '')
+// })
 
-// const formatTime = Vue.filter("formatTime", function (date) {
+// const formatTime = Vue.filter('formatTime', function (date) {
 //   // MMM DD, YYYY at h:mm A
 //   if (date) {
-//     return $nuxt.$store.getters["location/getLocale"] === Language.EN
-//       ? $nuxt.$dayjs(date).format("MMM DD, YYYY - HH:mm")
-//       : $nuxt.$dayjs(date).format("YYYY/MM/DD HH:mm");
+//     return $nuxt.$store.getters['location/getLocale'] === Language.EN
+//       ? $nuxt.$dayjs(date).format('MMM DD, YYYY - HH:mm')
+//       : $nuxt.$dayjs(date).format('YYYY/MM/DD HH:mm')
 //   }
-//   return "";
-// });
+//   return ''
+// })
 
-// const formatDate = Vue.filter("formatDate", function (date) {
+// const formatDate = Vue.filter('formatDate', function (date) {
 //   if (date) {
-//     return $nuxt.$store.getters["location/getLocale"] === Language.EN
-//       ? $nuxt.$dayjs(date).format("MMM DD, YYYY")
-//       : $nuxt.$dayjs(date).format("YYYY/MM/DD");
+//     return $nuxt.$store.getters['location/getLocale'] === Language.EN
+//       ? $nuxt.$dayjs(date).format('MMM DD, YYYY')
+//       : $nuxt.$dayjs(date).format('YYYY/MM/DD')
 //   }
-//   return "";
-// });
+//   return ''
+// })
 
-// const formatDays = Vue.filter("formatDays", function (date) {
-//   const dateIndex = $nuxt.$dayjs(date);
+// const formatDays = Vue.filter('formatDays', function (date) {
+//   const dateIndex = $nuxt.$dayjs(date)
 //   if (date) {
-//     return $nuxt.$store.getters["location/getLocale"] === Language.EN
-//       ? $nuxt.$dayjs(date).format("MMM DD, YYYY HH:mm (ddd)")
-//       : `${$nuxt.$dayjs(date).format("YYYY年MM月DD日 HH:mm")} (${
-//           dateByJapan[dateIndex.day() - 1]
-//         })`;
+//     return $nuxt.$store.getters['location/getLocale'] === Language.EN
+//       ? $nuxt.$dayjs(date).format('MMM DD, YYYY HH:mm (ddd)')
+//       : `${$nuxt.$dayjs(date).format('YYYY年MM月DD日 HH:mm')} (${dateByJapan[dateIndex.day() - 1]})`
 //   }
-//   return "";
-// });
+//   return ''
+// })
 
-// export default { price, formatPrice, formatTime, formatDate, formatDays };
+// export default { price, formatPrice, formatTime, formatDate, formatDays }

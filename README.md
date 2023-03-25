@@ -90,3 +90,45 @@ module.exports = {
   // add your custom rules here
   rules: {},
 };
+ 
+
+ ## eslint other
+
+$ npm install --save-dev prettier @prettier/plugin-php
+$ npm install --save-dev eslint eslint-plugin-vue eslint-config-prettier eslint-plugin-prettier
+
+.prettierrc 
+{
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "printWidth": 120
+}
+.eslintrc.js
+module.exports = {
+    root: true,
+    env: {
+        browser: true,
+        node: true,
+    },
+    extends: [
+        'eslint:recommended',
+        'plugin:vue/vue3-recommended',
+        'prettier'
+    ],
+    plugins: ['prettier'],
+    rules: {
+        'prettier/prettier': ['error'],
+        'vue/require-default-prop': 0,
+        'vue/html-indent': ['error', 4],
+        'vue/singleline-html-element-content-newline': 0,
+        'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    },
+    globals: {
+        _: true,
+    },
+}
+.prettierignore
+# Ignore artifacts:
+build
+coverage

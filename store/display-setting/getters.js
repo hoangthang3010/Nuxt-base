@@ -71,9 +71,7 @@ export default {
   recommendationData(state) {
     const payload = cloneDeep(state.recommendationData)
 
-    const recommend_categories = payload.recommend_categories.filter(
-      (cat) => cat.category_id
-    )
+    const recommend_categories = payload.recommend_categories.filter((cat) => cat.category_id)
 
     payload.recommend_categories = recommend_categories
 
@@ -84,9 +82,7 @@ export default {
     const payload = cloneDeep(state.popularData)
 
     // Parse categories
-    const categoriesFiltered = payload.popular_categories.filter(
-      (cat) => cat.category_id
-    )
+    const categoriesFiltered = payload.popular_categories.filter((cat) => cat.category_id)
 
     const categories = categoriesFiltered.map((item) => ({
       is_automatic: item.is_automatic,
